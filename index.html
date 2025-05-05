@@ -13,6 +13,21 @@
         h1, h2, h3 {
             font-family: 'Playfair Display', serif;
         }
+        .details-section {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+        }
+        .details-section.active {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
+        .animal-card {
+            transition: all 0.3s ease;
+        }
+        .animal-card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -21,7 +36,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <h1 class="text-2xl font-bold text-amber-600">The Rising Sun</h1>
+                    <a href="index.html" class="text-2xl font-bold text-amber-600">The Rising Sun</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-gray-700 hover:text-amber-600">About</a>
@@ -33,7 +48,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="relative h-[70vh] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+    <header class="relative h-[50vh] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
         <div class="absolute inset-0 bg-black bg-opacity-40"></div>
         <div class="relative h-full flex items-center justify-center text-center">
             <div class="text-white px-4">
@@ -62,49 +77,59 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Dexter Cattle -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Dexter Cattle</h3>
-                        <p class="text-gray-600">Our Dexter cattle are a small, hardy breed known for their excellent beef and milk production. They're perfect for small farms and are known for their gentle temperament.</p>
+                <a href="dexter.html" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:shadow-xl">
+                        <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition-colors">Dexter Cattle</h3>
+                            <p class="text-gray-600">Our Dexter cattle are a small, hardy breed known for their excellent beef and milk production. They're perfect for small farms and are known for their gentle temperament.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- St. Croix Sheep -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">St. Croix Sheep</h3>
-                        <p class="text-gray-600">The St. Croix sheep are a hair sheep breed known for their parasite resistance and excellent meat quality. They're low-maintenance and perfect for sustainable farming.</p>
+                <a href="stcroix.html" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:shadow-xl">
+                        <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition-colors">St. Croix Sheep</h3>
+                            <p class="text-gray-600">The St. Croix sheep are a hair sheep breed known for their parasite resistance and excellent meat quality. They're low-maintenance and perfect for sustainable farming.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Chickens -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Heritage Chickens</h3>
-                        <p class="text-gray-600">Our free-range chickens provide fresh eggs daily. We focus on heritage breeds that are well-suited to pasture-based systems.</p>
+                <a href="chickens.html" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:shadow-xl">
+                        <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition-colors">Heritage Chickens</h3>
+                            <p class="text-gray-600">Our free-range chickens provide fresh eggs daily. We focus on heritage breeds that are well-suited to pasture-based systems.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Meishan Pigs -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Meishan Pigs</h3>
-                        <p class="text-gray-600">The Meishan pig is a Chinese breed known for its exceptional mothering abilities and high-quality pork. They're well-suited to pasture-based systems.</p>
+                <a href="meishan.html" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:shadow-xl">
+                        <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition-colors">Meishan Pigs</h3>
+                            <p class="text-gray-600">The Meishan pig is a Chinese breed known for its exceptional mothering abilities and high-quality pork. They're well-suited to pasture-based systems.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
 
                 <!-- Kune Kune Pigs -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Kune Kune Pigs</h3>
-                        <p class="text-gray-600">Kune Kune pigs are a small, friendly breed from New Zealand. They're excellent grazers and known for their docile nature and delicious pork.</p>
+                <a href="kunekune.html" class="group">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 group-hover:shadow-xl">
+                        <div class="aspect-square bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 group-hover:text-amber-600 transition-colors">Kune Kune Pigs</h3>
+                            <p class="text-gray-600">Kune Kune pigs are a small, friendly breed from New Zealand. They're excellent grazers and known for their docile nature and delicious pork.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -137,9 +162,31 @@
     <footer class="bg-gray-800 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <p>&copy; 2024 The Rising Sun Farm. All rights reserved.</p>
+                <p>&copy; 2025 The Rising Sun Farm. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleDetails(animalId) {
+            const detailsSection = document.getElementById(`${animalId}-details`);
+            const arrow = document.getElementById(`${animalId}-arrow`);
+            
+            // Close all other sections
+            document.querySelectorAll('.details-section').forEach(section => {
+                if (section.id !== `${animalId}-details` && section.classList.contains('active')) {
+                    section.classList.remove('active');
+                    const otherArrow = document.getElementById(section.id.replace('-details', '-arrow'));
+                    if (otherArrow) {
+                        otherArrow.classList.remove('rotate-180');
+                    }
+                }
+            });
+
+            // Toggle current section
+            detailsSection.classList.toggle('active');
+            arrow.classList.toggle('rotate-180');
+        }
+    </script>
 </body>
 </html> 
