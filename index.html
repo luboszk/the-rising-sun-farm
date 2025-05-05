@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rising Sun Farm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-amber-600">The Rising Sun</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-amber-600">About</a>
+                    <a href="#livestock" class="text-gray-700 hover:text-amber-600">Our Livestock</a>
+                    <a href="#contact" class="text-gray-700 hover:text-amber-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[70vh] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1500595046743-cd271d694d30?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative h-full flex items-center justify-center text-center">
+            <div class="text-white px-4">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">The Rising Sun Farm</h1>
+                <p class="text-xl md:text-2xl">Sustainable Farming with Heritage Breeds</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">About Our Farm</h2>
+            <p class="text-gray-600 text-center max-w-3xl mx-auto">
+                Welcome to The Rising Sun Farm, where we practice sustainable agriculture and raise heritage breeds of livestock. 
+                Our commitment to traditional farming methods and animal welfare ensures the highest quality products while 
+                preserving these valuable genetic resources for future generations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Livestock Section -->
+    <section id="livestock" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Livestock</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dexter Cattle -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dexter Cattle</h3>
+                        <p class="text-gray-600">Our Dexter cattle are a small, hardy breed known for their excellent beef and milk production. They're perfect for small farms and are known for their gentle temperament.</p>
+                    </div>
+                </div>
+
+                <!-- St. Croix Sheep -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">St. Croix Sheep</h3>
+                        <p class="text-gray-600">The St. Croix sheep are a hair sheep breed known for their parasite resistance and excellent meat quality. They're low-maintenance and perfect for sustainable farming.</p>
+                    </div>
+                </div>
+
+                <!-- Chickens -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Heritage Chickens</h3>
+                        <p class="text-gray-600">Our free-range chickens provide fresh eggs daily. We focus on heritage breeds that are well-suited to pasture-based systems.</p>
+                    </div>
+                </div>
+
+                <!-- Meishan Pigs -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Meishan Pigs</h3>
+                        <p class="text-gray-600">The Meishan pig is a Chinese breed known for its exceptional mothering abilities and high-quality pork. They're well-suited to pasture-based systems.</p>
+                    </div>
+                </div>
+
+                <!-- Kune Kune Pigs -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kune Kune Pigs</h3>
+                        <p class="text-gray-600">Kune Kune pigs are a small, friendly breed from New Zealand. They're excellent grazers and known for their docile nature and delicious pork.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Visit Us</h3>
+                            <p class="text-gray-600 mb-2">The Rising Sun Farm</p>
+                            <p class="text-gray-600 mb-2">123 Farm Road</p>
+                            <p class="text-gray-600 mb-2">Countryside, ST 12345</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+                            <p class="text-gray-600 mb-2">Email: info@therisingsunfarm.com</p>
+                            <p class="text-gray-600 mb-2">Phone: (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2024 The Rising Sun Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
